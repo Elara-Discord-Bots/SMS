@@ -4,6 +4,7 @@ const { Server } = require("@elara-services/mailer");
 for (const v of [
     "GMAIL", "CLIENT_ID",
     "CLIENT_SECRET", "REFRESH_TOKEN",
+    "API_KEY",
 ]) {
     if (!process.env[v]) {
         console.error(`You didn't provide (${v}) in .env`);
